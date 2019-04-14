@@ -229,14 +229,14 @@
     justify-content: space-between;
     align-items: center;
 }
-.menu__icon{
+.main-nav__icon{
     display: none;
     width: 35px;
     height: 28px;
     position: relative;
     cursor: pointer;
  }
-.menu__icon span{
+.main-nav__icon span{
     display: block;
     position: absolute;
     height: 5px;
@@ -248,33 +248,33 @@
     transform: rotate(0deg);
     transition: .25s ease-in-out;
 }
-.menu__icon span:nth-child(1){
+.main-nav__icon span:nth-child(1){
     top: 0px;
 }
-.menu__icon span:nth-child(2), .menu__icon span:nth-child(3){
+.main-nav__icon span:nth-child(2), .main-nav__icon span:nth-child(3){
     top: 13px;
 }
  
-.menu__icon span:nth-child(4){
+.main-nav__icon span:nth-child(4){
     top: 26px;
 }
-.menu.menu_state_open .menu__icon span:nth-child(1){
+.main-nav.main-nav_state_open .main-nav__icon span:nth-child(1){
     top: 18px;
     width: 0%;
     left: 50%;
 }
-.menu.menu_state_open .menu__icon span:nth-child(2){
+.main-nav.main-nav_state_open .main-nav__icon span:nth-child(2){
     transform: rotate(45deg);
 }
-.menu.menu_state_open  .menu__icon span:nth-child(3){
+.main-nav.main-nav_state_open  .main-nav__icon span:nth-child(3){
     transform: rotate(-45deg);
 }
-.menu.menu_state_open  .menu__icon span:nth-child(4){
+.main-nav.main-nav_state_open  .main-nav__icon span:nth-child(4){
     top: 18px;
     width: 0%;
     left: 50%;
 }
-.menu.menu_state_open .menu__links {
+.main-nav.main-nav_state_open .main-nav__menu {
     display: block;  
 }
 @media screen and (max-width: 1550px){
@@ -309,10 +309,6 @@
     }
 }
 @media screen and (max-width: 768px){
-    .menu__main-nav {
-        display: block;
-        text-align: center;
-    }
     .about-block{
         flex-wrap: wrap;
         justify-content: center;
@@ -343,10 +339,10 @@
     .main__inner{
         padding-top: 250px;
     }
-    .menu__icon{
+    .main-nav__icon{
         display: inline-block;
     }
-    .menu__links {
+    .main-nav__menu {
         display: none;
     } 
     .list-menu__item{
