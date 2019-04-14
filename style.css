@@ -229,7 +229,54 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.menu__icon{
+    display: none;
+    width: 35px;
+    height: 28px;
+    position: relative;
+    cursor: pointer;
+ }
+.menu__icon span{
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 9px;
+    opacity: 1;
+    left: -20px;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+.menu__icon span:nth-child(1){
+    top: 0px;
+}
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3){
+    top: 13px;
+}
+ 
+.menu__icon span:nth-child(4){
+    top: 26px;
+}
+.menu.menu_state_open .menu__icon span:nth-child(1){
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+.menu.menu_state_open .menu__icon span:nth-child(2){
+    transform: rotate(45deg);
+}
+.menu.menu_state_open  .menu__icon span:nth-child(3){
+    transform: rotate(-45deg);
+}
+.menu.menu_state_open  .menu__icon span:nth-child(4){
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+.menu.menu_state_open .menu__links {
+    display: block;  
+}
 @media screen and (max-width: 1550px){
     .list-menu__item{
         margin: 0 20px;
@@ -249,7 +296,7 @@
         justify-content: center;
     }
 }
- @media screen and (max-width: 1024px) {
+ @media screen and (max-width: 1024px){
     .main__text {
         max-width: 100%;
     }
@@ -261,7 +308,7 @@
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     .menu__main-nav {
         display: block;
         text-align: center;
@@ -283,28 +330,36 @@
         margin-bottom: 20px;
     }
 }
-@media screen and (max-width: 450px) {
-    .main-nav__menu{
-        display: block;
-        text-align: center;
-    }
+@media screen and (max-width: 450px){
     .logo{
         padding: 15px;
     }
     .contacts{
         justify-content: center;
     }
+    .main-nav{
+        justify-content: space-between;
+    }
     .main__inner{
         padding-top: 250px;
     }
+    .menu__icon{
+        display: inline-block;
+    }
+    .menu__links {
+        display: none;
+    } 
+    .list-menu__item{
+        margin: 0 15px;
+    } 
 }
-@font-face {
+@font-face{
     font-family: 'Muller Narrow';
     src: url('assets/font/mullernarrow/MullerNarrow-ExtraBold.otf');
     font-weight: 800;
     font-style: normal;
   }
-  @font-face {
+  @font-face{
     font-family: 'Muller Narrow';
     src: url('assets/font/mullernarrow/MullerNarrow-Light.otf');
     font-weight: 300;
