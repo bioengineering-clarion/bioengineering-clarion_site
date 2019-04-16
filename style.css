@@ -336,9 +336,6 @@
     .main-nav{
         justify-content: space-between;
     }
-    .main__inner{
-        padding-top: 250px;
-    }
     .main-nav__icon{
         display: inline-block;
     }
