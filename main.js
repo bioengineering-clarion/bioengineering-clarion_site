@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('.main-nav .main-nav__link').mPageScroll2id({
 		offset: 50
-		});// Плавный скрол привязвн к ссылкам
+		});// Плавный скролл привязан к ссылкам
 		
 		$('.main-nav__icon').on('click', function() {
 			$(this).closest('.main-nav')
