@@ -9,7 +9,7 @@
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="assets/jquery/jquery.malihu.PageScroll2id.min.js"></script> <!-- Плагин плавный скролл привязан к ссылкам -->
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/image/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/image/favicon.png" type="image/png">
     <!-- <link rel="stylesheet" href="assets/font/fontawesome-free-5.7.2-web/css/all.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -18,14 +18,20 @@
         <header class="header">
             <div class="header__inner container">
                 <nav class="main-nav">
-                    <div class="logo font">Bioengineering Clarion</div>
+                    <div class="logo">
+                        <img src="assets/image/logo.png" alt="Logo" class="logo__img">
+                        <div class="logo-text logo__logo-textfont font_weight_ExtraBold">
+                            <span class="logo-text__word">Bioengineering</span>
+                            <span class="logo-text__word logo-text__word_color">Clarion</span>
+                        </div>
+                    </div>
                     <div class="main-nav__icon">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                    <ul class="list list-menu main-nav__menu font font_weight_Regular">
+                    <ul class="list list-menu main-nav__menu font font_weight_Medium">
                         <li class="list__item list-menu__item"><a href="#first" class="link main-nav__link main-nav__link_color">Главная</a></li>
                         <li class="list__item list-menu__item"><a href="#second" class="link main-nav__link main-nav__link_color">О нас</a></li>
                         <li class="list__item list-menu__item"><a href="#third" class="link main-nav__link main-nav__link_color">Наша деятельность</a>
@@ -48,34 +54,45 @@
         </main>
         <div class="about" id="second">
             <div class="about__inner container">
-                <h2 class="heading about__heading font font_weight_Bold">О нас</h2>
+                <h2 class="heading about__heading font font_weight_ExtraBold">О нас</h2>
                 <div class="about-block">
                     <div class="about-photo">
                         <img src="assets/image/microscope.jpg" alt="microscope" class="about-photo__img">
                     </div>
-                    <p class="about__paragraph">
-                        Bioengineering Clarion — некоммерческая организация, деятельность которой направлена на исследования и распространения информации в области продления жизни.
-                    </p>
-                </div>
+                    <div class="about-text social-network">
+                        <p class="about-text__paragraph">Bioengineering Clarion — некоммерческая организация, деятельность которой направлена на исследования и распространения информации в области продления жизни.</p>
+                        <p class="about-text__paragraph">Ознакомтесь с нашей концепцией, перейдя по <a class="about-text__link about-text__link_color" href="https://medium.com/@bioengineering.clarion/%D0%B3%D0%BE%D1%80%D0%BD-adf2dc06befe" target="_blank"> ссылке.</a></p>
+                        <div class="social-network__group social-network__group_border">
+                            <p class="about-text__paragraph">Подписывайтесь на наш телеграм канал и не забудьте его закрепить вверху, чтобы не пропустить важную информацию. С нами вы сможете узнавать самые интересные открытия о здоровье и продлении жизни. Ежедневно новости агрегируются в 10:30 и в 19:00.</p>
+                            <div class="social-network__item"><a class="social-network__link social-network__link_color" href="https://t.me/bioengineering_clarion" target="_blank"><span class="fab fa-telegram-plane"></span></a></div>
+                        </div>
+                        <div class="social-network__group social-network__group_border">
+                            <p class="about-text__paragraph">Следите за новостями в социальных сетях.</p>
+                            <div class="social-network__item"><a class="social-network__link social-network__link_color" href="https://www.facebook.com/bioengineering.clarion" target="_blank"><span class="fab fa-facebook-f"></span></a></div>
+                            <div class="social-network__item"><a class="social-network__link social-network__link_color" href="https://twitter.com/BioengineeringC" target="_blank"><span class="fab fa-twitter"></span></a></div>
+                        </div>
+                    </div>
+                </div>    
             </div>
         </div>
+        
         <div class="our-work" id="third">
             <div class="our-work__inner container">
-                <h2 class="heading our-work__heading font font_weight_Bold">Наша деятельность</h2>
+                <h2 class="heading our-work__heading font font_weight_ExtraBold">Наша деятельность</h2>
                 <ul class="list our-work-list">
                     <li class="idea-block our-work__item">
                         <span class="idea-block__icon fas fa-bullhorn"></span>
-                        <h3 class="idea-block__heading font font_weight_Bold">Популяризация</h3>
+                        <h3 class="idea-block__heading font font_weight_ExtraBold">Популяризация</h3>
                         <p class="idea-block__text">Создание благоприятного общественного настроения в отношении борьбы со старением.  Мы планируем агрегировать новости, делать переводы и обзоры наиболее значимых публикаций и выступлений на конференциях. Рассматриваем возможность проводить встречи с докладами и презентациями, освещающими актуальный научный прогресс.</p>
                     </li>
                     <li class="idea-block our-work__item ">
                         <span class="idea-block__icon fas fa-laptop-medical"></span>
-                        <h3 class="idea-block__heading font font_weight_Bold">Разработка</h3>
+                        <h3 class="idea-block__heading font font_weight_ExtraBold">Разработка</h3>
                         <p class="idea-block__text">Мы разрабатываем веб-ресурс и планируем интегрировать в него сервисы, связанные с биомаркерами, медицинской диагностикой и аналитикой активности исследовательских центров.</p>
                     </li>
                     <li class="idea-block our-work__item">
                         <span class="idea-block__icon fas fa-microscope"></span>
-                        <h3 class="idea-block__heading font font_weight_Bold">Исследования</h3>
+                        <h3 class="idea-block__heading font font_weight_ExtraBold">Исследования</h3>
                         <p class="idea-block__text">Широкая сфера применения глубоких нейронных сетей открывает огромные возможности в исследовании процессов старения. Исследовательскую команду возглавляет Data Science инженер. В ближайшее время мы планируем начать решать реальные задачи, связанные с данными в области биогеронтологии.</p>
                     </li>
                 </ul>
@@ -83,7 +100,7 @@
         </div>
         <footer class="footer" id="fourth">
             <div class="footer__inner container">
-                <h2 class="heading footer__heading font font_weight_Bold">Контакты</h2>
+                <h2 class="heading footer__heading font font_weight_ExtraBold">Контакты</h2>
                 <p class="footer__text">Спасибо, за ваш интерес к Bioengineering Clarion. Вы можете связаться с нами, используя информацию ниже. Чтобы получать последние обновления, присоединяйтесь к нам в социальных сетях.</p>
                 <div class="contacts">
                     <ul class="list social-network footer__social-network font font_Museo-Sans-Cyrillic font_weight_Regular">
