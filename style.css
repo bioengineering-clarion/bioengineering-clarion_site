@@ -50,7 +50,7 @@
 }
 .logo__img{
     width: 140px;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 .logo-text{
     font-size: 26px;
@@ -154,7 +154,7 @@
     padding: 15px;
     color: #343434;
 }
-.social-network__group_border{
+.about-text__group_border{
     border-top: 1px solid #E67312;
 }
 .about-text__link{
@@ -173,10 +173,17 @@
 .about-block__social-network{
     color: #343434;
 }
-.social-network__group{
+.about-text__group{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.about-text__item{
+    margin: 10px;
+}
+.about-text__social-icon{
+    width: 30px;
+    height: 30px;
 }
 .our-work{
     padding-top: 50px;
@@ -386,6 +393,9 @@
     .list-menu__item{
         margin: 0 15px;
     } 
+    .logo-text{
+        display: none;
+    }
 }
 @font-face{
     font-family: 'Muller Narrow';
