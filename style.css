@@ -63,6 +63,18 @@
 .logo-text__word_color{
     color: #076b49;
 }
+.language{
+    color: #076B49;
+    font-size: 21px;
+}
+.language__item{
+    cursor: pointer;
+    margin-right: 10px;
+}
+.active{
+    color: #E67312;
+    border-bottom: 1px solid #E67312;
+}
 .main-nav__menu{
     display: flex;
     flex-wrap: wrap;
@@ -384,14 +396,14 @@
     .main-nav__icon{
         display: inline-block;
     }
-    .main-nav__menu {
+    .main-nav__menu{
         display: none;
     } 
-    .main__inner {
+    .main__inner{
         padding-top: 100px;
     }
     .list-menu__item{
-        margin: 0 15px;
+        margin: 0 35px;
     } 
     .logo-text{
         display: none;

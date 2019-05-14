@@ -23,7 +23,7 @@
                     <nav class="main-nav">
                         <div class="logo">
                             <img src="assets/image/logo.svg" alt="logo" class="logo__img" title="logo">
-                            <div class="logo-text logo__logo-textfont font_weight_ExtraBold">
+                            <div class="logo-text logo__logo-text font font_weight_ExtraBold">
                                 <span class="logo-text__word">Bioengineering</span>
                                 <span class="logo-text__word logo-text__word_color">Clarion</span>
                             </div>
@@ -34,12 +34,19 @@
                             <span></span>
                             <span></span>
                         </div>
-                        <ul class="list list-menu main-nav__menu font font_weight_Medium">
-                            <li class="list__item list-menu__item"><a href="#first" class="link main-nav__link main-nav__link_color">Главная</a></li>
-                            <li class="list__item list-menu__item"><a href="#second" class="link main-nav__link main-nav__link_color">О нас</a></li>
-                            <li class="list__item list-menu__item"><a href="#third" class="link main-nav__link main-nav__link_color">Наша деятельность</a>
-                            <li class="list__item list-menu__item"><a href="#fourth" class="link main-nav__link main-nav__link_color">Контакты</a>
-                        </ul>
+                        <div>
+                            <ul class="list list-menu main-nav__menu font font_weight_Medium">
+                                <li class="list__item list-menu__item"><a href="#first" class="link main-nav__link main-nav__link_color local" data-local="home-page">Главная</a></li>
+                                <li class="list__item list-menu__item"><a href="#second" class="link main-nav__link main-nav__link_color local" data-local="about-us">О нас</a></li>
+                                <li class="list__item list-menu__item"><a href="#third" class="link main-nav__link main-nav__link_color local" data-local="our-activity">Наша деятельность</a>
+                                <li class="list__item list-menu__item"><a href="#fourth" class="link main-nav__link main-nav__link_color local" data-local="contacts">Контакты</a></li>
+                                <li class="list__item list-menu__item language">
+                                    <span class="language__item active" data-local-name="ua">UA</span>
+                                    <span class="language__item" data-local-name="ru">RU</span>
+                                </li>
+                            </ul>
+                            
+                        </div>
                     </nav>
                 </div>
             </header>
@@ -47,8 +54,8 @@
                 <div class="main__inner container">
                     <div class="main__text">
                         <h1 class="main__heading">Bioengineering Clarion</h1>
-                        <p class="main__paragraph">"Я надеюсь, мы с вами пожмем друг другу руки в эпоху, когда победа над возрастом станет реальностью - когда мы сможем наслаждаться необыкновенно долгой жизнью, сохраняя на всем ее протяжении здоровье и силы, когда призрак неизбежной старости рассеется под солнцем вечной молодости."</p>
-                        <p class="main__paragraph main__paragraph_qoute">
+                        <p class="main__paragraph local" data-local="quote">"Я надеюсь, мы с вами пожмем друг другу руки в эпоху, когда победа над возрастом станет реальностью - когда мы сможем наслаждаться необыкновенно долгой жизнью, сохраняя на всем ее протяжении здоровье и силы, когда призрак неизбежной старости рассеется под солнцем вечной молодости."</p>
+                        <p class="main__paragraph main__paragraph_qoute local" data-local="quote-author">
                             - Обри де Грей - Разработчик концепции
                             <a class="main__link" target="_blank" href="https://www.sens.org/">SENS</a>.
                         </p>
@@ -57,20 +64,20 @@
             </main>
             <div class="about" id="second">
                 <div class="about__inner container">
-                    <h2 class="heading about__heading font font_weight_ExtraBold">О нас</h2>
+                    <h2 class="heading about__heading font font_weight_ExtraBold local" data-local="about-us">О нас</h2>
                     <div class="about-block">
                         <div class="about-photo">
                             <img src="assets/image/microscope.jpg" alt="microscope" class="about-photo__img" title="microscope-photo">
                         </div>
                         <div class="about-text">
-                            <p class="about-text__paragraph">Bioengineering Clarion — некоммерческая организация, деятельность которой направлена на исследования и распространения информации в области продления жизни.</p>
-                            <p class="about-text__paragraph">Ознакомтесь с нашей концепцией, перейдя по <a class="about-text__link about-text__link_color" href="https://medium.com/@bioengineering.clarion/%D0%B3%D0%BE%D1%80%D0%BD-adf2dc06befe" target="_blank"> ссылке.</a></p>
+                            <p class="about-text__paragraph local" data-local="about-us-description">Bioengineering Clarion — некоммерческая организация, деятельность которой направлена на исследования и распространения информации в области продления жизни.</p>
+                            <p class="about-text__paragraph"><span class="local" data-local="about-us-concept">Ознакомьтесь с нашей концепцией, перейдя по </span><a class="about-text__link about-text__link_color local local-link" data-local="medium-link" href="https://medium.com/@bioengineering.clarion/%D0%B3%D0%BE%D1%80%D0%BD-adf2dc06befe" target="_blank"> ссылке.</a></p>
                             <div class="about-text__group about-text__group_border">
-                                <p class="about-text__paragraph">Подписывайтесь на наш телеграм канал и не забудьте его закрепить вверху, чтобы не пропустить важную информацию. С нами вы сможете узнавать самые интересные открытия о здоровье и продлении жизни.</p>
+                                <p class="about-text__paragraph local" data-local="about-us-telegram">Подписывайтесь на наш телеграм канал и не забудьте его закрепить вверху, чтобы не пропустить важную информацию. С нами вы сможете узнавать самые интересные открытия о здоровье и продлении жизни.</p>
                                 <div class="about-text__item"><a class="" href="https://t.me/bioengineering_clarion_channel" target="_blank"><img src="assets/image/telegram-icon.png" alt="telegram-icon" class="about-text__social-icon" title="telegram-icon"></a></div>
                             </div>
                             <div class="about-text__group about-text__group_border">
-                                <p class="about-text__paragraph">Следите за новостями в социальных сетях.</p>
+                                <p class="about-text__paragraph local" data-local="about-us-social-networks">Следите за новостями в социальных сетях.</p>
                                 <div class="about-text__item"><a class="" href="https://www.facebook.com/bioengineer.clarion" target="_blank"><img src="assets/image/facebook-icon.png" alt="facebook-icon" class="about-text__social-icon" title="facebook-icon"></a></div>
                                 <div class="about-text__item"><a class="" href="https://twitter.com/BioengineeringC" target="_blank"><img src="assets/image/twitter-icon.png" alt="twitter-icon" class="about-text__social-icon" title="twitter-icon"></a></div>
                             </div>
@@ -80,42 +87,42 @@
             </div>
             <div class="our-work" id="third">
                 <div class="our-work__inner container">
-                    <h2 class="heading our-work__heading font font_weight_ExtraBold">Наша деятельность</h2>
+                    <h2 class="heading our-work__heading font font_weight_ExtraBold local" data-local="our-activity">Наша деятельность</h2>
                     <ul class="list our-work-list">
                         <li class="idea-block our-work__item">
                             <span class="idea-block__icon fas fa-bullhorn"></span>
-                            <h3 class="idea-block__heading font font_weight_ExtraBold">Популяризация</h3>
-                            <p class="idea-block__text">Создание благоприятного общественного настроения в отношении борьбы со старением.  Мы планируем агрегировать новости, делать переводы и обзоры наиболее значимых публикаций и выступлений на конференциях. Рассматриваем возможность проводить встречи с докладами и презентациями, освещающими актуальный научный прогресс.</p>
+                            <h3 class="idea-block__heading font font_weight_ExtraBold local" data-local="popularization">Популяризация</h3>
+                            <p class="idea-block__text local" data-local="popularization text">Создание благоприятного общественного настроения в отношении борьбы со старением.  Мы планируем агрегировать новости, делать переводы и обзоры наиболее значимых публикаций и выступлений на конференциях. Рассматриваем возможность проводить встречи с докладами и презентациями, освещающими актуальный научный прогресс.</p>
                         </li>
-                        <li class="idea-block our-work__item ">
+                        <li class="idea-block our-work__item">
                             <span class="idea-block__icon fas fa-laptop-medical"></span>
-                            <h3 class="idea-block__heading font font_weight_ExtraBold">Разработка</h3>
-                            <p class="idea-block__text">Мы разрабатываем веб-ресурс и планируем интегрировать в него сервисы, связанные с биомаркерами, медицинской диагностикой и аналитикой активности исследовательских центров.</p>
+                            <h3 class="idea-block__heading font font_weight_ExtraBold local" data-local="development">Разработка</h3>
+                            <p class="idea-block__text local" data-local="development-text">Мы разрабатываем веб-ресурс и планируем интегрировать в него сервисы, связанные с биомаркерами, медицинской диагностикой и аналитикой активности исследовательских центров.</p>
                         </li>
                         <li class="idea-block our-work__item">
                             <span class="idea-block__icon fas fa-microscope"></span>
-                            <h3 class="idea-block__heading font font_weight_ExtraBold">Исследования</h3>
-                            <p class="idea-block__text">Широкая сфера применения глубоких нейронных сетей открывает огромные возможности в исследовании процессов старения. Исследовательскую команду возглавляет Data Science инженер. В ближайшее время мы планируем начать решать реальные задачи, связанные с данными в области биогеронтологии.</p>
+                            <h3 class="idea-block__heading font font_weight_ExtraBold local" data-local="research">Исследования</h3>
+                            <p class="idea-block__text local" data-local="research-text">Широкая сфера применения глубоких нейронных сетей открывает огромные возможности в исследовании процессов старения. Исследовательскую команду возглавляет Data Science инженер. В ближайшее время мы планируем начать решать реальные задачи, связанные с данными в области биогеронтологии.</p>
                         </li>
                     </ul>
                 </div>
             </div>
             <footer class="footer" id="fourth">
                 <div class="footer__inner container">
-                    <h2 class="heading footer__heading font font_weight_ExtraBold">Контакты</h2>
-                    <p class="footer__text">Спасибо, за ваш интерес к Bioengineering Clarion. Вы можете связаться с нами, используя информацию ниже. Чтобы получать последние обновления, присоединяйтесь к нам в социальных сетях.</p>
+                    <h2 class="heading footer__heading font font_weight_ExtraBold local" data-local="contacts">Контакты</h2>
+                    <p class="footer__text local" data-local="contacts-text">Спасибо, за ваш интерес к Bioengineering Clarion. Вы можете связаться с нами, используя информацию ниже. Чтобы получать последние обновления, присоединяйтесь к нам в социальных сетях.</p>
                     <div class="contacts">
                         <ul class="list social-network footer__social-network font font_Museo-Sans-Cyrillic font_weight_Regular">
                             <li class="social-network__item"><a class="social-network__link social-network__link_color" href="https://www.facebook.com/bioengineer.clarion" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
                             <li class="social-network__item"><a class="social-network__link social-network__link_color" href="https://www.instagram.com/bioengineering_clarion/" target="_blank"><span class="fab fa-instagram"></span></a></li>
                             <li class="social-network__item"><a class="social-network__link social-network__link_color" href="https://t.me/bioengineering_clarion_channel" target="_blank"><span class="fab fa-telegram-plane"></span></a></li>
-                            <li class="social-network__item"><a class="social-network__link social-network__link_color" href="https://medium.com/@bioengineering.clarion" target="_blank"><span class="fab fa-medium-m"></span></a></li>
+                            <li class="social-network__item"><a class="social-network__link social-network__link_color local-link" data-local="medium-link" href="https://medium.com/@bioengineering.clarion" target="_blank"><span class="fab fa-medium-m"></span></a></li>
                             <li class="social-network__item"><a class="social-network__link social-network__link_color" href="https://twitter.com/BioengineeringC" target="_blank"><span class="fab fa-twitter"></span></a></li>
                             <li class="social-network__item"><a class="social-network__link social-network__link_color" href="https://www.youtube.com/channel/UCMF8WZ22qIyogIk_D0pOABw?view_as=subscriber" target="_blank"><span class="fab fa-youtube"></span></a></li>
                             <li class="social-network__item"><a class="social-network__link social-network__link_color" href="https://www.linkedin.com/company/bioengineering-clarion" target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
                         </ul>
                         <div class="footer__mail">
-                            <span>По всем вопросам пишите по адресу</span>
+                            <span class="local" data-local="email-text">По всем вопросам пишите по адресу</span>
                             <span class="footer__link">bioengineering.clarion@gmail.com</span>
                         </div>
                     </div>
