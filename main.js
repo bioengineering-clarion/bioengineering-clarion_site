@@ -21,6 +21,7 @@ $(document).ready(function(){
 	$('.language__item').on('click', function() {
 		$(this).toggleClass('active');
 		loadLocal();
+		loadLocalLink();
 	});
 
 	function loadLocal() {
@@ -31,6 +32,17 @@ $(document).ready(function(){
 		for (var i = 0; i < localValue.length; i++) {
 			var key = localValue[i].getAttribute('data-local');
 			localValue[i].innerHTML = targetLocal[key];
+		}
+	}
+
+	function loadLocalLink() {
+		var element = document.getElementsByClassName('active')[0];
+		var widgetName = element.getAttribute('data-local-name');
+		var targetLocalLink = localLink[widgetName];
+		var localLinkValue = document.getElementsByClassName('local-link');
+		for (var i = 0; i < localLinkValue.length; i++) {
+			var key = localLinkValue[i].getAttribute('data-local');
+			localLinkValue[i].setAttribute('href',targetLocalLink[key]);
 		}
 	}
 	
@@ -83,10 +95,10 @@ $(document).ready(function(){
 			"medium-link": "https://medium.com/@bioengineering.clarion/%D0%B3%D0%BE%D1%80%D0%BD-adf2dc06befe"
 		},
 		ua: {
-			"medium-link": "https://medium.com/@bioengineering.clarion/%D0%B3%D0%BE%D1%80%D0%BD-adf2dc06befe"
+			"medium-link": "https://medium.com/@bioengineering.clarion/%D0%B3%D0%BE%D1%80%D0%BD-235420c0408a"
 		}
 	}
 	loadLocal();
-	
+	loadLocalLink();
 
 });

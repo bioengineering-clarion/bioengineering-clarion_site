@@ -364,6 +364,9 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+    .contacts{
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 768px){
     .about-block{
