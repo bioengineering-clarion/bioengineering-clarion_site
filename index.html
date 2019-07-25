@@ -7,6 +7,11 @@
         <title>Bioengineering Clarion</title>
         <script type="text/javascript" src="assets/jquery/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="assets/jquery/jquery-migrate-1.2.1.min.js"></script>
+
+        <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+
         <script type="text/javascript" src="main.js"></script>
         <script type="text/javascript" src="assets/jquery/jquery.malihu.PageScroll2id.min.js"></script> <!-- Плагин плавный скролл привязан к ссылкам -->
         <link rel="canonical" href="https://bioengineering-clarion.com"/>
@@ -38,13 +43,14 @@
                             <ul class="list list-menu main-nav__menu font font_weight_Medium">
                                 <li class="list__item list-menu__item"><a href="#first" class="link main-nav__link main-nav__link_color local" data-local="home-page">Главная</a></li>
                                 <li class="list__item list-menu__item"><a href="#second" class="link main-nav__link main-nav__link_color local" data-local="about-us">О нас</a></li>
-                                <li class="list__item list-menu__item"><a href="#third" class="link main-nav__link main-nav__link_color local" data-local="our-activity">Наша деятельность</a>
-                                <li class="list__item list-menu__item"><a href="#fourth" class="link main-nav__link main-nav__link_color local" data-local="contacts">Контакты</a></li>
-                                <li class="list__item list-menu__item language">
-                                    <span class="language__item active" data-local-name="ua">UA</span>
-                                    <span class="language__item" data-local-name="ru">RU</span>
-                                </li>
-                            </ul> 
+                                <li class="list__item list-menu__item"><a href="#third" class="link main-nav__link main-nav__link_color local" data-local="our-activity">Наша деятельность</a></li>
+                                <li class="list__item list-menu__item"><a href="#fourth" class="link main-nav__link main-nav__link_color local" data-local="our-products">Наши достижения</a></li>
+                                <li class="list__item list-menu__item"><a href="#fifth" class="link main-nav__link main-nav__link_color local" data-local="contacts">Контакты</a></li> 
+                            </ul>    
+                        </div>
+                        <div class="main-nav__item language list main-nav__menu font font_weight_Medium">
+                            <span class="language__item active" data-local-name="ua">UA</span>
+                            <span class="language__item" data-local-name="ru">RU</span>
                         </div>
                     </nav>
                 </div>
@@ -66,20 +72,12 @@
                     <h2 class="heading about__heading font font_weight_ExtraBold local" data-local="about-us">О нас</h2>
                     <div class="about-block">
                         <div class="about-photo">
-                            <img src="assets/image/microscope.jpg" alt="microscope" class="about-photo__img" title="microscope-photo">
+                            <img src="assets/image/artificial.png" alt="artificial" class="about-photo__img" title="artificial-photo">
                         </div>
                         <div class="about-text">
                             <p class="about-text__paragraph local" data-local="about-us-description">Bioengineering Clarion — некоммерческая организация, деятельность которой направлена на исследования и распространения информации в области продления жизни.</p>
+                            <p class="about-text__paragraph local" data-local="about-us-mission">С точки зрения нашей организации, нет ничего важнее, чем окончательная победа над биологическими факторами, разрушающими наш организм. Мы считаем, что борьба с болезнями, старением и в конечном итоге смертью, должна быть направляющим вектором всего человечества.</p>
                             <p class="about-text__paragraph"><span class="local" data-local="about-us-concept">Ознакомьтесь с нашей концепцией, перейдя по </span><a class="about-text__link about-text__link_color local local-link" data-local="medium-link" href="https://medium.com/@bioengineering.clarion/%D0%B3%D0%BE%D1%80%D0%BD-adf2dc06befe" target="_blank"> ссылке.</a></p>
-                            <div class="about-text__group about-text__group_border">
-                                <p class="about-text__paragraph local" data-local="about-us-telegram">Подписывайтесь на наш телеграм канал и не забудьте его закрепить вверху, чтобы не пропустить важную информацию. С нами вы сможете узнавать самые интересные открытия о здоровье и продлении жизни.</p>
-                                <div class="about-text__item"><a class="" href="https://t.me/bioengineering_clarion_channel" target="_blank"><img src="assets/image/telegram-icon.png" alt="telegram-icon" class="about-text__social-icon" title="telegram-icon"></a></div>
-                            </div>
-                            <div class="about-text__group about-text__group_border">
-                                <p class="about-text__paragraph local" data-local="about-us-social-networks">Следите за новостями в социальных сетях.</p>
-                                <div class="about-text__item"><a class="" href="https://www.facebook.com/bioengineer.clarion" target="_blank"><img src="assets/image/facebook-icon.png" alt="facebook-icon" class="about-text__social-icon" title="facebook-icon"></a></div>
-                                <div class="about-text__item"><a class="" href="https://twitter.com/BioengineeringC" target="_blank"><img src="assets/image/twitter-icon.png" alt="twitter-icon" class="about-text__social-icon" title="twitter-icon"></a></div>
-                            </div>
                         </div>
                     </div>    
                 </div>
@@ -91,7 +89,7 @@
                         <li class="idea-block our-work__item">
                             <span class="idea-block__icon fas fa-bullhorn"></span>
                             <h3 class="idea-block__heading font font_weight_ExtraBold local" data-local="popularization">Популяризация</h3>
-                            <p class="idea-block__text local" data-local="popularization text">Создание благоприятного общественного настроения в отношении борьбы со старением.  Мы планируем агрегировать новости, делать переводы и обзоры наиболее значимых публикаций и выступлений на конференциях. Рассматриваем возможность проводить встречи с докладами и презентациями, освещающими актуальный научный прогресс.</p>
+                            <p class="idea-block__text local" data-local="popularization-text">Создание благоприятного общественного настроения в отношении борьбы со старением.  Мы планируем агрегировать новости, делать переводы и обзоры наиболее значимых публикаций и выступлений на конференциях. Рассматриваем возможность проводить встречи с докладами и презентациями, освещающими актуальный научный прогресс.</p>
                         </li>
                         <li class="idea-block our-work__item">
                             <span class="idea-block__icon fas fa-laptop-medical"></span>
@@ -106,7 +104,63 @@
                     </ul>
                 </div>
             </div>
-            <footer class="footer" id="fourth">
+            <div class="our-achievements" id="fourth">
+                <div class="our-achievements__inner container">
+                    <h2 class="heading our-achievements__heading font font_weight_ExtraBold local" data-local="our-products">Наши достижения</h2>
+                    <ul class="list our-achievements-list">
+                        <li class="achievement our-achievements-list__item">
+                            <div class="achievement-photo achievement-photo_border">
+                                <img src="assets/image/telegram.png" alt="" class="achievement-photo__img" title="telegram-photo">
+                            </div>
+                            <div class="achievement-text">
+                                <h3 class="achievement-text__heading font font_weight_ExtraBold local" data-local="telegram-channel-heading">Bioengineering Clarion - телеграм канал</h3>
+                                <p class="achievement-text__paragraph local" data-local="channel-text-about">В канале публикуются актуальные новости в области биоинженерии в 9:30 и в 19:00 (UTC +3). Новости агрегируются в удобной для ознакомления форме, благодаря этому сложная информация становится доступна любому человеку. С нами вы сможете узнавать самые интересные открытия о здоровье и продлении жизни.</p>
+                                <p class="achievement-text__paragraph"><span class="local" data-local="channel-text">Подписывайтесь на наш </span><a class="achievement-text__link achievement-text__link_color local" data-local="channel-text-link" href="https://t.me/bioengineering_clarion_channel" target="_blank">телеграм канал</a><span class="local" data-local="channel-text-continuation"> и не забудьте его закрепить вверху, чтобы не пропустить важную информацию.</span></p>
+                            </div>
+                        </li>
+                        <li class="achievement our-achievements-list__item">
+                            <div class="achievement-text">
+                                <h3 class="achievement-text__heading font font_weight_ExtraBold local" data-local="video-heading">Перевод и дубляж докладов с конференции "Undoing Aging 2019"</h3>
+                                <p class="achievement-text__paragraph local" data-local="video-text">"Undoing Aging" - это самая авторитетная ежегодная научная конференция по радикальным методам борьбы со старением, проходящая в Берлине. На ней собираются ученые-биогеронтологи со всего мира и делятся информацией о самых последних исследованиях и разработках.</p>
+                                <p class="achievement-text__paragraph"><span class="local" data-local="youtube-text">У вас есть уникальная возможность посмотреть доклады на русском языке на нашем </span><a class="achievement-text__link achievement-text__link_color local" data-local="youtube-link" href="https://www.youtube.com/channel/UC8i-lz0PHbYzy9UmLKAQ7zQ" target="_blank">youtube канале.</a></p>
+                            </div>
+                            <div class="slider achievement-photo achievement-photo_border">
+                                <div class="slider__inner">
+                                    <div>
+                                        <iframe class="slider__video" width="560" height="315" src="https://www.youtube.com/embed/spmpoIwQQlA?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div>
+                                        <iframe class="slider__video" width="560" height="315" src="https://www.youtube.com/embed/BRou7VlUep8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="achievement our-achievements-list__item">
+                            <div class="achievement-photo achievement-photo_border">
+                                <img src="assets/image/bot.png" alt="bot" class="achievement-photo__img" title="bot-photo">
+                            </div>
+                            <div class="achievement-text">
+                                <h3 class="achievement-text__heading font font_weight_ExtraBold local" data-local="bot-heading">Bioengineering Clarion Diagnostic - телеграм бот</h3>
+                                <p class="achievement-text__paragraph"><a class="achievement-text__link achievement-text__link_color local" data-local="bot-link" href="https://t.me/BCDiagnosticBot" target="_blank">Bioengineering Clarion Diagnostic</a><span class="local" data-local="bot-text"> - телеграмм бот, на базе сверточного нейронной сети.
+                                    Простой в использовании сервис, предназначенный для распознавания и классификации образований на коже по фото. Имеет локализацию и доступный интерфейс.
+                                    Предоставленная ботом информация дает повод внимательнее следить за здоровьем и мотивирует обратиться к врачу для предупреждения заболеваний кожи. На текущий момент мы выделяем следующие направления развития: внедрить английский локализацию; повышать точность результатов для фото с невысоким качеством; улучшить производительность; добавлять новые диагностики. Данный продукт разработан для каждого, кто заботится о своем здоровье.</span></p>
+                            </div>
+                        </li>
+                        <li class="achievement our-achievements-list__item">
+                            <div class="achievement-text">
+                                <h3 class="achievement-text__heading font font_weight_ExtraBold local" data-local="trello-heading">Bioengineering Clarion Tasks - публичная система управления задачами</h3>
+                                <p class="achievement-text__paragraph local" data-local="task-text">Природа и сложность проблем, препятствующих радикальному продлению жизни и победе над старением, указывает на необходимость консолидации действий для их преодоления. Если вы хотите быть причастным к чему-то важному, разделяете наше видение и готовы действовать - начните сейчас.</p>
+                                <p class="achievement-text__paragraph"><span class="local" data-local="trello-text">Мы предлагаем публичную </span><a class="achievement-text__link achievement-text__link_color local local-link" data-local="trello-link" href="https://trello.com/b/uGMdwHLB/bioengineering-clarion" target="_blank">"доску task’ов"</a><span class="local" data-local="trello-text-continuation">, в которой будем размещать текущие идеи и инициативы. Будем благодарны за воплощение в жизнь любого из предложенных заданий.</span></p>
+                                <p class="achievement-text__paragraph"><span class="local" data-local="instruction-text">Ознакомьтесь с </span><a class="achievement-text__link achievement-text__link_color local local-link" data-local="trello-instruction-link" href="https://medium.com/@bioengineering.clarion/public-task-management-system-e9e37ec70848" target="_blank">инструкцией</a><span class="local" data-local="instruction-text-continuation">, чтобы быстро разобраться в простом интерфейсе и выполнить свой первый "task". Чип и Дейл спешат на помощь, а ты?</span></p>
+                            </div>
+                            <div class="achievement-photo achievement-photo_border">
+                                <img src="assets/image/task.jpg" alt="task" class="achievement-photo__img" title="task-photo">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <footer class="footer" id="fifth">
                 <div class="footer__inner container">
                     <h2 class="heading footer__heading font font_weight_ExtraBold local" data-local="contacts">Контакты</h2>
                     <p class="footer__text local" data-local="contacts-text">Спасибо, за ваш интерес к Bioengineering Clarion. Вы можете связаться с нами, используя информацию ниже. Чтобы получать последние обновления, присоединяйтесь к нам в социальных сетях.</p>

@@ -35,6 +35,7 @@
 .header{
     background: #fff;
     position: fixed;
+    z-index: 2;
     width: 100%;
 }
 .main-nav{
@@ -50,7 +51,7 @@
 }
 .logo__img{
     width: 140px;
-    margin-right: 20px;
+    margin-right: 12px;
 }
 .logo-text{
     font-size: 26px;
@@ -68,8 +69,8 @@
     font-size: 21px;
 }
 .language__item{
-    cursor: pointer;
     margin-right: 10px;
+    cursor: pointer;
 }
 .active{
     color: #E67312;
@@ -80,9 +81,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    font-size: 21px;
+    font-size: 20px;
 }
-.list-menu__item{
+.list-menu__item, .main-nav__item{
     margin: 0 30px;
     padding: 10px 0;
     cursor: pointer;
@@ -160,14 +161,12 @@
     align-items: stretch;
 }
 .about-text{
-    font-size: 20px;
+    font-size: 24px;
     max-width: 500px;
+    box-sizing: border-box;
     margin: 0;
     padding: 15px;
     color: #343434;
-}
-.about-text__group_border{
-    border-top: 1px solid #E67312;
 }
 .about-text__link{
     text-decoration: none;
@@ -184,18 +183,6 @@
 }
 .about-block__social-network{
     color: #343434;
-}
-.about-text__group{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.about-text__item{
-    margin: 10px;
-}
-.about-text__social-icon{
-    width: 30px;
-    height: 30px;
 }
 .our-work{
     padding-top: 50px;
@@ -232,6 +219,96 @@
 .idea-block__text{
     font-size: 20px;
     color: #ffffff;
+}
+.our-achievements{
+    padding-top: 50px;
+    background: url(assets/image/abstract.jpg) no-repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+}
+.our-achievements__inner{
+    margin-bottom: 50px;
+}
+.slider{
+    width: 100%;
+    max-width: 600px;
+}
+.slider__inner{
+    width: auto;
+    height: auto;
+}
+.slick-slide{
+    width: 100%;
+}
+.slick-prev {
+    left: 30px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+}
+.slick-next{
+    right: 30px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+}
+.slick-prev:before, .slick-next:before{
+    opacity: 10;
+    font-size: 50px;
+}
+.slider__video{
+    width: 100%;
+    max-height: 100%;
+}
+.slider-nav{
+    overflow: hidden;
+}
+.our-achievements-list__item{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.achievement-photo{
+    display: flex;
+    border: 10px solid transparent;
+    padding: 20px;
+}
+.achievement-photo_border{
+    border-image: linear-gradient(to left, transparent 40%, #E67312 100%);
+    border-image-slice: 1; 
+}
+.achievement-photo_border:nth-child(even){
+    border-image: linear-gradient(to right, transparent 40%, #E67312 100%);
+    border-image-slice: 1;  
+}
+.achievement-photo__img, .slider__inner{
+    width: 100%;
+    align-content: center;
+}
+.achievement-text__heading{
+    font-size: 24px;
+    color: #076B49;
+    text-align: center;
+}
+.achievement-text__paragraph{
+    font-size: 20px;
+    color: #343434;
+}
+.achievement-text{
+    text-align: justify;
+    max-width: 550px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.achievement-text__link{
+    text-decoration: none;
+    color: #E67312;
+}
+.achievement-text__link_color:hover{
+    color: #076B49;
 }
 .footer{
     padding-top: 50px;
@@ -333,10 +410,11 @@
 }
 .main-nav.main-nav_state_open .main-nav__menu {
     display: block;  
+    width: 100%;
 }
 @media screen and (max-width: 1550px){
-    .list-menu__item{
-        margin: 0 20px;
+    .list-menu__item, .main-nav__item{
+        margin: 0 8px;
     }
     .main-nav{
         flex-wrap: nowrap;
@@ -345,9 +423,6 @@
 @media screen and (max-width: 1194px){
     .main__inner,.main__list{
         justify-content: center;
-    }
-    .list-menu__item{
-        margin: 0 10px;
     }
     .our-work-list{
         justify-content: center;
@@ -369,20 +444,23 @@
     }
 }
 @media screen and (max-width: 768px){
-    .about-block{
+    .about-block,.our-achievements-list__item{
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .achievement-photo{
+        display: none;
     }
     .about__paragraph{
         max-width: 100%;
     }
-    .about, .our-work, .footer{
+    .about,.our-work,.footer{
         padding-top: 10px;
     }
-    .main__heading, .about__heading, .our-work__heading, .footer__heading{
+    .main__heading,.about__heading,.our-work__heading,.footer__heading{
         margin: 10px 0;
     }
-    .about__inner, .our-work__inner{
+    .about__inner,.our-work__inner{
         margin-bottom: 20px;
     }
 }
@@ -405,7 +483,7 @@
     .main__inner{
         padding-top: 100px;
     }
-    .list-menu__item{
+    .list-menu__item, .main-nav__item{
         margin: 0 35px;
     } 
     .logo-text{
