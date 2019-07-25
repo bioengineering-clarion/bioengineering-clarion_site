@@ -302,6 +302,8 @@
     max-width: 550px;
     padding: 15px;
     box-sizing: border-box;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .achievement-text__link{
     text-decoration: none;
@@ -454,10 +456,10 @@
     .about__paragraph{
         max-width: 100%;
     }
-    .about,.our-work,.footer{
+    .about,.our-work,.our-achievements,.footer{
         padding-top: 10px;
     }
-    .main__heading,.about__heading,.our-work__heading,.footer__heading{
+    .main__heading,.about__heading,.our-work__heading,.our-achievements__heading,.footer__heading{
         margin: 10px 0;
     }
     .about__inner,.our-work__inner{
