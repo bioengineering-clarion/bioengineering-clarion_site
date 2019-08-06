@@ -273,6 +273,7 @@
 }
 .achievement-photo{
     display: flex;
+    align-items: center;
     border: 10px solid transparent;
     padding: 20px;
 }
@@ -284,9 +285,8 @@
     border-image: linear-gradient(to right, transparent 40%, #E67312 100%);
     border-image-slice: 1;  
 }
-.achievement-photo__img, .slider__inner{
+.achievement-photo__link, .slider__inner{
     width: 100%;
-    align-content: center;
 }
 .achievement-text__heading{
     font-size: 24px;
